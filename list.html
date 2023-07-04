@@ -15,7 +15,7 @@
     $(document).ready(async function() {
       const pageno = getPageno();
       const result = await fetch(pageno);
-      console.log(result);
+      printContacts(result.contacts);
     });
   </script>
   <title>Document</title>
